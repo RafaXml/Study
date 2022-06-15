@@ -1,0 +1,60 @@
+
+git init = inicializa um novo repositório
+
+git init = inicializa um novo repositório
+
+
+touch .gitignore = gera um arquivo onde podemos colocar pasta dentro dela para não enviar no GIT
+
+git reflog = checar o histórico de versões do git 
+
+
+
+git add . = adiciona os arquivos atuais ao próximo commit
+git add [nome da pasta] = adiciona o arquivo atual para o commit 
+echo [nome da pasta ou arquivo] >> .gitignore = enviar o arquivo no gitignore
+cat .gitignore = verificar os arquivos selecionados no gitignore
+
+
+git status = verificar o status atual dos repositório git
+
+
+git commit -m "mesagem do commit" = criar um novo commit com uma mensagem
+
+
+git push = envia as atualizações para a nuvem na branch atualmente ativa
+
+
+git branch = permite listar e ver qual branch está ativa atualmente
+git branch [nome da branch] = criar uma nova branch no git 
+git checkout [nome da branch] = permite mudar para uma nova branch
+
+
+git reset --hard [código da versão] = permite o usuario voltar a versão que desejar no git
+
+
+git checkout -b "nome da branch de origem" "nome da nova branch" = permite mudar e criar uma nova branch com base em outra
+git metge "branch a receber merge" = permite fazer o merge da branch ativa atualmente com outra branch
+
+
+
+
+git add . = adiciona os arquivos atuais ao próximo commit
+git add [nome da pasta] = adiciona o arquivo atual para o commit 
+echo [nome da pasta ou arquivo] >> .gitignore = enviar o arquivo no gitignore
+cat .gitignore = verificar os arquivos selecionados no gitignore
+
+git status = verificar o status atual dos repositório git
+
+git commit -m "mesagem do commit" = criar um novo commit com uma mensagem
+
+git push = envia as atualizações para a nuvem na branch atualmente ativa
+
+
+
+git reset --hard [código da versão] = permite o usuario voltar a versão que desejar no git
+
+git checkout -b "nome da branch de origem" "nome da nova branch" = permite mudar e criar uma nova branch com base em outra
+git metge "branch a receber merge" = permite fazer o merge da branch ativa atualmente com outra branch
+
+git pull = atualiza a branch atualmente ativa
