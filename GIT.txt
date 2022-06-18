@@ -1,60 +1,48 @@
+PASSO-A-PASSO para criar uma branch a partir de outra
+=====================================================
+git pull da branch principal
+gerar uma nova branch a partir da branch principal 
+trabalhar e adicionar novas funcionalidades na nova branch que criou
+finalizar o trabalho na branch temporaria 
+git checkout na branch principal 
+git pull
+mergiar ( unir ) o codigo da branch temporario com a branch principal ( depois de testar )
+PULL REQUEST UM MERGE DEMOCRÁTICO = VALIDADOR DE CÓDIGO
+unir uma branch com a principal branch 
 
-git init = inicializa um novo repositório
-
-git init = inicializa um novo repositório
 
 
-touch .gitignore = gera um arquivo onde podemos colocar pasta dentro dela para não enviar no GIT
 
-git reflog = checar o histórico de versões do git 
-
-
+git init  = inicializa um novo repositório
 
 git add . = adiciona os arquivos atuais ao próximo commit
-git add [nome da pasta] = adiciona o arquivo atual para o commit 
-echo [nome da pasta ou arquivo] >> .gitignore = enviar o arquivo no gitignore
-cat .gitignore = verificar os arquivos selecionados no gitignore
 
+git checkout -b sistema-de-login master = criar uma [branch] com Base na branch principal
+
+git remote add origin [ link do repositorio github ] = conectar seu git no github
+
+git push --set-upstream origin [ nome da branch ] = adicionar uma branch nova precisa upar ela para nuvel no github com o comando
+
+git push  --set-upstream origin master = enviar para github 
+
+git reflog = mostra todas as versoes do projeto ja feitas
+
+touch .gitignore = cria um arquivo onde podemos colocar pasta dentro dele
 
 git status = verificar o status atual dos repositório git
 
-
 git commit -m "mesagem do commit" = criar um novo commit com uma mensagem
 
+git reset --hard [codigo] = voltar a uma versao anterior do codigo atraves dos commtis 
 
 git push = envia as atualizações para a nuvem na branch atualmente ativa
-
 
 git branch = permite listar e ver qual branch está ativa atualmente
-git branch [nome da branch] = criar uma nova branch no git 
-git checkout [nome da branch] = permite mudar para uma nova branch
 
-
-git reset --hard [código da versão] = permite o usuario voltar a versão que desejar no git
-
+git checkout [nome-da-branch] = permite mudar para uma nova branch
 
 git checkout -b "nome da branch de origem" "nome da nova branch" = permite mudar e criar uma nova branch com base em outra
-git metge "branch a receber merge" = permite fazer o merge da branch ativa atualmente com outra branch
 
-
-
-
-git add . = adiciona os arquivos atuais ao próximo commit
-git add [nome da pasta] = adiciona o arquivo atual para o commit 
-echo [nome da pasta ou arquivo] >> .gitignore = enviar o arquivo no gitignore
-cat .gitignore = verificar os arquivos selecionados no gitignore
-
-git status = verificar o status atual dos repositório git
-
-git commit -m "mesagem do commit" = criar um novo commit com uma mensagem
-
-git push = envia as atualizações para a nuvem na branch atualmente ativa
-
-
-
-git reset --hard [código da versão] = permite o usuario voltar a versão que desejar no git
-
-git checkout -b "nome da branch de origem" "nome da nova branch" = permite mudar e criar uma nova branch com base em outra
 git metge "branch a receber merge" = permite fazer o merge da branch ativa atualmente com outra branch
 
 git pull = atualiza a branch atualmente ativa
